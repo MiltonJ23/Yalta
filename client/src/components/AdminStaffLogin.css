@@ -1,0 +1,76 @@
+/* Supprimer toutes les styles précédentes et remplacer par : */
+
+body {
+    background-color: white;
+}
+
+.MuiFormControl-root {
+    margin: 20px 0 !important;
+}
+
+.MuiInputLabel-root {
+    font-size: 1.5rem !important;
+    transform: translate(14px, 25px) scale(1) !important;
+}
+
+.MuiInputLabel-shrink {
+    transform: translate(14px, -9px) scale(0.75) !important;
+}
+
+.MuiOutlinedInput-input {
+    padding: 39px 14px !important;
+}
+
+.MuiButton-root {
+    border-radius: 27px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+}
+
+/* Positionner le texte "login" en noir en haut à gauche des champs */
+.login-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Positionner le lien "register" plus bas */
+.register-link {
+    margin-top: 50px; /* Ajustez cette valeur selon vos besoins */
+    display: block;
+    text-align: center;
+    color: black; /* Assurez-vous que le texte est visible */
+}
+
+/* Agrandir les TextField en largeur et légèrement en longueur */
+.login-input .MuiOutlinedInput-root {
+    border-radius: 27px !important;
+    width: 150%; /* Ajustez la largeur selon vos besoins */
+    height: 78px; /* Ajustez la hauteur selon vos besoins */
+}
+
+/* Styliser le bouton Submit */
+.login-button {
+    border-radius: 27px !important;
+    background-color: green !important;
+    color: white !important;
+    width: 80%; /* La moitié de la largeur des TextField */
+    height: 70px; /* La même hauteur que les TextField */
+    margin: 20px auto !important; /* Centrer le bouton */
+    display: block;
+}
+
+/* Assurez-vous que le lien "Already have an account?" est visible */
+.login-footer {
+    text-align: center;
+    margin-top: 20px;
+    color: black; /* Assurez-vous que le texte est visible */
+}
+
+.login-link {
+    text-decoration: none;
+    color: #1976d2; /* Couleur du lien */
+}

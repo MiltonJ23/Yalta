@@ -1,0 +1,130 @@
+/* Supprimer toutes les styles précédentes et remplacer par : */
+
+body {
+    background-color: white;
+}
+
+.MuiFormControl-root {
+    margin: 20px 0 !important;
+}
+
+.MuiInputLabel-root {
+    font-size: 1.5rem !important;
+    transform: translate(14px, 25px) scale(1) !important;
+}
+
+.MuiInputLabel-shrink {
+    transform: translate(14px, -9px) scale(0.75) !important;
+}
+
+.MuiOutlinedInput-input {
+    padding: 39px 14px !important;
+}
+
+.MuiButton-root {
+    border-radius: 27px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+}
+
+/* Positionner le texte "login" en noir en haut à gauche des champs */
+.login-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Positionner le lien "register" plus bas */
+.register-link {
+    margin-top: 50px; /* Ajustez cette valeur selon vos besoins */
+    display: block;
+    text-align: center;
+}
+
+/* Agrandir les TextField en largeur et légèrement en longueur */
+.login-input .MuiOutlinedInput-root {
+    border-radius: 27px !important;
+    width: 150%; /* Ajustez la largeur selon vos besoins */
+    height: 78px; /* Ajustez la hauteur selon vos besoins */
+}
+
+/* Styliser le bouton Submit */
+.login-button {
+    border-radius: 27px !important;
+    background-color: green !important;
+    color: white !important;
+    width: 80%; /* La moitié de la largeur des TextField */
+    height: 70px; /* La même hauteur que les TextField */
+    margin: 20px auto !important; /* Centrer le bouton */
+    display: block;
+}
+/* Build upon existing ApplicantDashboard styles */
+.application-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .application-card.expanded {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  
+  .status {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  
+  .status.pending { background: #fff3cd; color: #856404; }
+  .status.approved { background: #d4edda; color: #155724; }
+  .status.rejected { background: #f8d7da; color: #721c24; }
+  
+  .detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .message-input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .applicant-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .applicant-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #3498db;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+  }
